@@ -1,0 +1,30 @@
+Clock Tower,Darshanlal Chowk,Saharanpur Chowk,ISBT,Geu
+Asley Hall,Clock Tower,Darshanlal Chowk,Saharanpur Chowk,ISBT,Geu
+Saharanpur Chowk,Matawala Bagh,ISBT,Geu
+Daudwala,Mathurawala,Vishnupuram,Bangali Kothi,Kargi Chowk,ISBT,Geu
+Raipur Chowk,Dobhal Chowk,6 No. Pulia,Ring Road,Post Office Nehru Gram,Jogiwala,Rispana,ISBT,Geu/Gehu
+Bangali Kothi,Kargi Chowk,ISBT,Geu
+Ranipokhri,Doiwala,Lachiwala,Kuanwala,Harawala,Miawala,Mokampur,Jogiwala,Rispana,ISBT,Geu
+Doiwala,Lachiwala,Kuanwala,Harawala,Miawala,Mokampur,Jogiwala,Rispana,ISBT,Geu
+Gujraunwala,Raipur Chowk,Dobhal Chowk,6 No. Pulia,Ring Road,Post Office Nehru Gram,Jogiwala,Rispana,ISBT,Geu/Gehu
+Post Office Nehru Gram,Jogiwala,Rispana,ISBT,Geu/Gehu
+Hathibadkala,Garhi Cant,Vijay Coloney,Chir Bagh,CM House,Garhi Cant,ONGC Chowk,Ballupur Chowk,GMS Road,Geu
+Garhi Cant,Vijay Coloney,Chir Bagh,CM House,Garhi Cant,ONGC Chowk,Ballupur Chowk,GMS Road,Geu
+Rajender Nagar,Yamuna Coloney,Bindal Pul,Kishan Nagar,Blood Bank,Ballupur Chowk,GMS Road,Geu
+Supply,Ballupur Chowk,GMS Road,Geu
+ONGC Chowk,Ballupur Chowk,GMS Road,Geu
+IT Park,Nala Paani Chowk,Shastdhara Crossing,Ladpur,6 No. Pulia,Fountain Chowk Rispana,Kargi Chowk,ISBT,Geu
+Shastdhara Crossing,Ladpur,6 No. Pulia,Fountain Chowk Rispana,Kargi Chowk,ISBT,Geu
+Fountain Chowk,Nehru Colony,Rispana,Kargi,Geu
+Nakrounda More,Harawala,Miawala,Mokampur,Jogiwala,Rispana,ISBT,Geu
+Mokampur,Jogiwala,Rispana,Kargi Chowk,ISBT,Geu
+Rispana,Kargi Chowk,ISBT,Geu/Gehu
+Naya Gaon Palio,Badowala,Telpur,Mehuwala,ISBT,Geu
+Badowala,Telpur,Mehuwala,ISBT,Geu
+Race Course,Dharampur,Mata Mandir,Kargi Chowk,ISBT,Geu
+Dharampur,Balbir Road,Fountain Chowk,Rispana,ISBT,Geu
+Rajpur,Great Value,Dilaram Bazar,Nanni Bakery,Survey Chowk,Dwarka Store,Araghar,Rispana,Kargi Chowk,ISBT,Geu
+Kulhal,ISBT,Geu/Gehu
+VikasNagar,Tehsil,Harbatpur Chowk,Langa Road,Shaspur,Selaqui,Sudhowala,Nanda Ki Chowki,Premnagar,Panditwari,Vasant Vihar,Baliwala Chowk,GMS Road,Geu
+Selaqui Chowk,Sudhowala,Nanda Ki Chowki,Premnagar,Panditwari,Vasant Vihar,Baliwala Chowk,GMS Road,Geu
+Prem Nagar,Panditwari,Balliwalachowk,GMS Road,GEU
