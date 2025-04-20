@@ -1,2 +1,4 @@
 # Bus-tracking-System
- 
+ Our PBL project using DS and C language
+
+Many schools and colleges struggle with inefficient bus tracking, student safety concerns, and unpredictable delays. Students and parents often have no clear visibility of where the bus is, leading to missed buses or long waiting times. Similarly, bus drivers face challenges in identifying how many students are waiting at each stop, which can cause unnecessary stops or delays. Why It’s Important: 1. Real-Time Bus Tracking for Students & Parents → They can check exactly when their bus will arrive, reducing waiting times. 2. Reduces Waiting Time: Students and parents can check real-time bus locations. 3. Route Optimization for College Administration → Ensures buses take the most efficient path, saving fuel and time. 4. Driver Assistance → Drivers can see which students are waiting at each stop, preventing unnecessary halts.
