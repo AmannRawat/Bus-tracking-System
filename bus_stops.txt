@@ -1,0 +1,15 @@
+Ranipokhri,1
+Doiwala,1
+ISBT,1
+Rajpur,2
+Jakhan,2
+Clocktower,2
+Kuanwala,3
+Jogiwala,3
+Subhashnagar,4
+Mokhampur,3
+Rispana,1
+Miawala,3
+Ballupur,4
+Premnagar,4
+GEU,1
