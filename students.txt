@@ -1,1 +1,2 @@
 50,AMAN,Raipur,-1
+10,man,Dobhal Chowk,10

@@ -1,0 +1,25 @@
+2,Saharanpur Chowk,Matawala Bagh,ISBT,Geu|0
+3,Kulhal,ISBT,Geu/Gehu|0
+4,Supply,Ballupur Chowk,GMS Road,Geu|0
+5,Ranipokhri,Doiwala,Lachiwala,Kuanwala,Harawala,Miawala,Mokampur,Jogiwala,Rispana,ISBT,Geu|0
+6,Ranipokhri,Doiwala,Lachiwala,Kuanwala,Harawala,Miawala,Mokampur,Jogiwala,Rispana,ISBT,Geu|0
+7,Daudwala,Mathurawala,Vishnupuram,Bangali Kothi,Kargi Chowk,ISBT,Geu|0
+8,Post Office Nehru Gram,Jogiwala,Rispana,ISBT,Geu/Gehu|0
+9,Saharanpur Chowk,Matawala Bagh,ISBT,Geu|0
+10,Raipur Chowk,Dobhal Chowk,6 No. Pulia,Ring Road,Post Office Nehru Gram,Jogiwala,Rispana,ISBT,Geu/Gehu|0
+11,Saharanpur Chowk,Matawala Bagh,ISBT,Geu|0
+12,Raipur Chowk,Dobhal Chowk,6 No. Pulia,Ring Road,Post Office Nehru Gram,Jogiwala,Rispana,ISBT,Geu/Gehu|0
+13,Race Course,Dharampur,Mata Mandir,Kargi Chowk,ISBT,Geu|0
+14,Ranipokhri,Doiwala,Lachiwala,Kuanwala,Harawala,Miawala,Mokampur,Jogiwala,Rispana,ISBT,Geu|0
+15,Badripur,Nehrugram,Jogiwala,Rispana,ISBT,Geu|0
+16,Race Course,Dharampur,Mata Mandir,Kargi Chowk,ISBT,Geu|0
+17,Chidderwala,Badripur,Nehrugram,Jogiwala,Rispana,ISBT,Geu|0
+18,Clock Tower,Darshanlal Chowk,Saharanpur Chowk,Matawala Bagh,ISBT,Geu|0
+19,Badripur,Nehrugram,Jogiwala,Rispana,ISBT,Geu|0
+20,Clock Tower,Darshanlal Chowk,Saharanpur Chowk,Matawala Bagh,ISBT,Geu|0
+21,Kulhal,ISBT,Geu/Gehu|0
+22,Saharanpur Chowk,Matawala Bagh,ISBT,Geu|0
+23,Asley Hall,Clock Tower,Darshanlal Chowk,Saharanpur Chowk,Matawala Bagh,ISBT,Geu|0
+24,Clock Tower,Darshanlal Chowk,Saharanpur Chowk,Matawala Bagh,ISBT,Geu|0
+25,Clock Tower,Darshanlal Chowk,Saharanpur Chowk,Matawala Bagh,ISBT,Geu|0
+26,ISBT,Geu|0
