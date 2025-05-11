@@ -1,7 +1,7 @@
 2,Saharanpur Chowk,Matawala Bagh,ISBT,Geu|0
 3,Kulhal,ISBT,Geu/Gehu|0
 4,Supply,Ballupur Chowk,GMS Road,Geu|0
-5,Ranipokhri,Doiwala,Lachiwala,Kuanwala,Harawala,Miawala,Mokampur,Jogiwala,Rispana,ISBT,Geu|5
+5,Ranipokhri,Doiwala,Lachiwala,Kuanwala,Harawala,Miawala,Mokampur,Jogiwala,Rispana,ISBT,Geu|0
 6,Ranipokhri,Doiwala,Lachiwala,Kuanwala,Harawala,Miawala,Mokampur,Jogiwala,Rispana,ISBT,Geu|0
 7,Daudwala,Mathurawala,Vishnupuram,Bangali Kothi,Kargi Chowk,ISBT,Geu|0
 8,Post Office Nehru Gram,Jogiwala,Rispana,ISBT,Geu/Gehu|0

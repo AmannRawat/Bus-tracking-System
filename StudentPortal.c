@@ -101,96 +101,140 @@ void showStudents() {
     fclose(fp);
 }
 
-// Track Bus for a student
-void trackBus() {
-    int inputRoll;
-    printf("Enter your Roll Number to track bus: ");
-    scanf("%d", &inputRoll);
 
-    FILE *fp = fopen("students.txt", "r");
-    if (fp == NULL) {
-        printf("Student file not found.\n");
+// Track Bus for a student (simulated dynamic movement)
+void trackMyBus() {
+    char studentID[50];
+    printf("Enter your student ID: ");
+    scanf("%s", studentID);
+
+    // 1. Open students.txt to find the student's bus and stop
+    FILE *studentFile = fopen("students.txt", "r");
+    if (!studentFile) {
+        printf("Error opening students.txt\n");
         return;
     }
 
-    int roll, found = 0, busNo;
-    char name[50], stop[50];
+    char line[256], *stopName = NULL;
+    int busNumber = -1;
 
-    while (fscanf(fp, "%d,%[^,],%[^,],%d\n", &roll, name, stop, &busNo) != EOF) {
-        if (roll == inputRoll) {
-            found = 1;
+    // Search for the student in the file
+    while (fgets(line, sizeof(line), studentFile)) {
+        char *token = strtok(line, ",");
+        if (token && strcmp(token, studentID) == 0) {
+            strtok(NULL, ","); // Skip name
+            stopName = strdup(strtok(NULL, ",")); // Store stop name
+            busNumber = atoi(strtok(NULL, ",")); // Store bus number
             break;
         }
     }
-    fclose(fp);
+    fclose(studentFile);
 
-    if (!found) {
-        printf("Student not found!\n");
+    if (!stopName || busNumber == -1) {
+        printf("Student not found or invalid data.\n");
+        if (stopName) free(stopName);
         return;
     }
 
+    // 2. Open bus_status.txt to read current bus status
     FILE *busFile = fopen("bus_status.txt", "r");
-    if (busFile == NULL) {
-        printf("Could not open bus_status.txt\n");
+    if (!busFile) {
+        printf("Error opening bus_status.txt\n");
+        free(stopName);
         return;
     }
 
-    char line[300];
-    int busesOnWay = 0, busesPassed = 0, totalBuses = 0;
+    // 3. Create a temporary file for updated status
+    FILE *tempFile = fopen("bus_status_temp.txt", "w");
+    if (!tempFile) {
+        printf("Error creating temp file.\n");
+        fclose(busFile);
+        free(stopName);
+        return;
+    }
 
-    printf("\nTracking for: %s | Stop: %s | Assigned Bus No: %d\n", name, stop, busNo);
-    printf("------------------------------------------------------\n");
+    int foundBus = 0;
 
+    // 4. Read each bus entry
     while (fgets(line, sizeof(line), busFile)) {
-        char *busPart = strtok(line, "|");
-        char *indexPart = strtok(NULL, "\n");
-        if (!busPart || !indexPart) continue;
+        char originalLine[256];
+        strcpy(originalLine, line); // Keep a backup of the original line
 
-        int currentIndex = atoi(indexPart);
-
-        char *stopToken = strtok(busPart, ",");
-        int busNumber = atoi(stopToken);
-
-        if (busNumber != busNo) continue; // Only show the student's assigned bus
-
-        char route[MAX][50];
-        int routeLen = 0;
-        while ((stopToken = strtok(NULL, ",")) != NULL) {
-            strcpy(route[routeLen++], stopToken);
+        // Find the last '|' to separate route and index
+        char *pipePtr = strrchr(originalLine, '|');
+        if (!pipePtr) {
+            fprintf(tempFile, "%s", originalLine); // Write as-is if no '|'
+            continue;
         }
 
-        int studentIndex = -1;
-        for (int i = 0; i < routeLen; i++) {
-            if (strcmp(route[i], stop) == 0) {
-                studentIndex = i;
+        *pipePtr = '\0'; // Split route and index
+        int currIndex = atoi(pipePtr + 1); // Current stop index
+
+        // Check if this is the student's bus
+        int currentBus = atoi(originalLine);
+        if (currentBus != busNumber) {
+            fprintf(tempFile, "%s|%d\n", originalLine, currIndex); // Not the target bus
+            continue;
+        }
+
+        foundBus = 1;
+
+        // Parse the route (without modifying originalLine)
+        char routeCopy[256];
+        strcpy(routeCopy, originalLine);
+        char *routeParts[50];
+        int partCount = 0;
+
+        // Tokenize the route (bus number + stops)
+        char *token = strtok(routeCopy, ",");
+        while (token && partCount < 50) {
+            routeParts[partCount++] = token;
+            token = strtok(NULL, ",");
+        }
+
+        // Find the student's stop in the route
+        int studentStopIndex = -1;
+        for (int i = 1; i < partCount; i++) {
+            if (strcmp(routeParts[i], stopName) == 0) {
+                studentStopIndex = i - 1; // Adjust for 0-based index
                 break;
             }
         }
 
-        if (studentIndex == -1) {
-            printf("Stop not found in route.\n");
-            continue;
-        }
-
-        totalBuses++;
-        printf("Bus %d is currently at: %s\n", busNumber, route[currentIndex]);
-
-        if (currentIndex < studentIndex) {
-            printf("Status: 🟡 On the way (ETA: %d stops away)\n\n", studentIndex - currentIndex);
-            busesOnWay++;
-        } else if (currentIndex == studentIndex) {
-            printf("Status: 🟢 At your stop!\n\n");
+        if (studentStopIndex == -1) {
+            printf("Error: Stop '%s' not found in Bus %d's route.\n", stopName, busNumber);
+        } else if (currIndex < studentStopIndex) {
+            printf("Bus %d is approaching. Current stop: %s\n", busNumber, routeParts[currIndex + 1]);
+            printf("Upcoming stops:\n");
+            for (int i = currIndex + 1; i <= studentStopIndex; i++) {
+                printf(" - %s\n", routeParts[i + 1]);
+            }
+        } else if (currIndex == studentStopIndex) {
+            printf("Bus %d is at your stop: %s\n", busNumber, routeParts[currIndex + 1]);
         } else {
-            printf("Status: 🔴 Already passed your stop.\n\n");
-            busesPassed++;
+            printf("Bus %d has passed your stop. Current location: %s\n", busNumber, routeParts[currIndex + 1]);
         }
+
+        // 5. Move bus to next stop (if not at the end)
+        if (currIndex + 1 < partCount - 1) {
+            currIndex++;
+        }
+
+        // Write back the original route (before strtok modified it) with updated index
+        fprintf(tempFile, "%s|%d\n", originalLine, currIndex);
     }
 
     fclose(busFile);
+    fclose(tempFile);
+    free(stopName);
 
-    printf("Total Buses to your stop: %d\n", totalBuses);
-    printf("Buses on the way: %d\n", busesOnWay);
-    printf("Buses passed: %d\n", busesPassed);
+    // 6. Replace old bus_status.txt with the updated one
+    remove("bus_status.txt");
+    rename("bus_status_temp.txt", "bus_status.txt");
+
+    if (!foundBus) {
+        printf("Bus %d not found in route data.\n", busNumber);
+    }
 }
 
 int main() {
@@ -206,7 +250,7 @@ int main() {
                     break;
             case 2: showStudents();
                     break;
-            case 3: trackBus(); 
+            case 3: trackMyBus(); 
                     break;
             case 4: printf("Goodbye!\n"); 
                     break;

@@ -1,2 +1,2 @@
-50,AMAN,Raipur,-1
-10,man,Dobhal Chowk,10
+10,Aman,Dobhal Chowk,10
+2,Rawat,Miawala,5
