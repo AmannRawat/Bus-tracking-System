@@ -2,8 +2,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define MAX 100
-
 // Function to auto-assign bus number based on stop
 int getBusNumber(char *stopName) {
     FILE *file = fopen("bus_stops.txt", "r");
