@@ -1,0 +1,31 @@
+Clock Tower:7,Darshanlal Chowk:10,Saharanpur Chowk:8,ISBT:5,Geu
+Asley Hall:8,Clock Tower:9,Darshanlal Chowk:5,Saharanpur Chowk:7,ISBT:10,Geu
+Saharanpur Chowk:10,Matawala Bagh:9,ISBT:9,Geu
+Daudwala:7,Mathurawala:10,Vishnupuram:8,Bangali Kothi:9,Kargi Chowk:5,ISBT:5,Geu
+Raipur Chowk:6,Dobhal Chowk:8,6 No. Pulia:6,Ring Road:5,Post Office Nehru Gram:10,Jogiwala:6,Rispana:9,ISBT:8,Geu/Gehu
+Bangali Kothi:5,Kargi Chowk:6,ISBT:7,Geu
+Ranipokhri:6,Doiwala:9,Lachiwala:7,Kuanwala:10,Harawala:5,Miawala:8,Mokampur:6,Jogiwala:7,Rispana:8,ISBT:5,Geu
+Doiwala:6,Lachiwala:10,Kuanwala:5,Harawala:7,Miawala:6,Mokampur:8,Jogiwala:7,Rispana:6,ISBT:8,Geu
+Gujraunwala:9,Raipur Chowk:7,Dobhal Chowk:6,6 No. Pulia:5,Ring Road:8,Post Office Nehru Gram:10,Jogiwala:6,Rispana:9,ISBT:7,Geu/Gehu
+Post Office Nehru Gram:6,Jogiwala:9,Rispana:7,ISBT:6,Geu/Gehu
+Hathibadkala:7,Garhi Cant:5,Vijay Coloney:8,Chir Bagh:6,CM House:9,Garhi Cant:7,ONGC Chowk:6,Ballupur Chowk:7,GMS Road:5,Geu
+Garhi Cant:6,Vijay Coloney:5,Chir Bagh:7,CM House:8,Garhi Cant:7,ONGC Chowk:6,Ballupur Chowk:7,GMS Road:9,Geu
+Rajender Nagar:6,Yamuna Coloney:7,Bindal Pul:5,Kishan Nagar:6,Blood Bank:9,Ballupur Chowk:6,GMS Road:5,Geu
+Supply:8,Ballupur Chowk:6,GMS Road:5,Geu
+ONGC Chowk:5,Ballupur Chowk:7,GMS Road:6,Geu
+IT Park:9,Nala Paani Chowk:8,Shastdhara Crossing:7,Ladpur:6,6 No. Pulia:7,Fountain Chowk Rispana:9,Kargi Chowk:6,ISBT:7,Geu
+Shastdhara Crossing:5,Ladpur:8,6 No. Pulia:7,Fountain Chowk Rispana:6,Kargi Chowk:9,ISBT:8,Geu
+Fountain Chowk:6,Nehru Colony:5,Rispana:7,Kargi:6,Geu
+Nakrounda More:9,Harawala:6,Miawala:7,Mokampur:5,Jogiwala:8,Rispana:9,ISBT:6,Geu
+Mokampur:5,Jogiwala:7,Rispana:6,Kargi Chowk:8,ISBT:9,Geu
+Rispana:6,Kargi Chowk:7,ISBT:5,Geu/Gehu
+Naya Gaon Palio:9,Badowala:6,Telpur:7,Mehuwala:5,ISBT:8,Geu
+Badowala:6,Telpur:7,Mehuwala:8,ISBT:6,Geu
+Race Course:7,Dharampur:8,Mata Mandir:6,Kargi Chowk:5,ISBT:7,Geu
+Dharampur:7,Balbir Road:6,Fountain Chowk:5,Rispana:7,ISBT:6,Geu
+Rajpur:6,Great Value:7,Dilaram Bazar:5,Nanni Bakery:6,Survey Chowk:8,Dwarka Store:6,Araghar:7,Rispana:8,Kargi Chowk:6,ISBT:7,Geu
+Kulhal:9,ISBT:7,Geu/Gehu
+VikasNagar:10,Tehsil:8,Harbatpur Chowk:9,Langa Road:7,Shaspur:6,Selaqui:8,Sudhowala:7,Nanda Ki Chowki:6,Premnagar:7,Panditwari:9,Vasant Vihar:6,Baliwala Chowk:7,GMS Road:5,Geu
+Selaqui Chowk:6,Sudhowala:5,Nanda Ki Chowki:7,Premnagar:9,Panditwari:6,Vasant Vihar:8,Baliwala Chowk:7,GMS Road:6,Geu
+Prem Nagar:6,Panditwari:5,Balliwalachowk:6,GMS Road:7,GEU
+xx:6,yy:8,zz

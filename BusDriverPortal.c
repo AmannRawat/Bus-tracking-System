@@ -76,27 +76,27 @@ void moveToNextStop() {
     }
 
     const char* current = route.stops[route.currentStopIndex].stopName;
-    printf("\n🚌 Current Location: %s\n", current);
+    printf("\n Current Location: %s\n", current);
 
     if (studentsWaitingAtStop(current)) {
-        printf("📢 Pick-up Alert: Students waiting at this stop!\n");
+        printf(" Pick-up Alert: Students waiting at this stop!\n");
         if (route.studentsBoarded < MAX_CAPACITY) {
             route.studentsBoarded++;
-            printf("✅ Student boarded. Total onboard: %d\n", route.studentsBoarded);
+            printf(" Student boarded. Total onboard: %d\n", route.studentsBoarded);
         } else {
-            printf("🚫 Bus is full! Cannot board more students.\n");
+            printf(" Bus is full! Cannot board more students.\n");
         }
     }
 
     if (route.currentStopIndex + 1 < route.stopCount) {
         const char* next = route.stops[route.currentStopIndex + 1].stopName;
-        printf("➡️  Next Stop: %s\n", next);
+        printf("  Next Stop: %s\n", next);
     } else {
-        printf("✅ Final stop reached.\n");
+        printf(" Final stop reached.\n");
     }
 
     if (route.studentsBoarded == MAX_CAPACITY) {
-        printf("🚍 Bus is FULL. No more students can be boarded.\n");
+        printf(" Bus is FULL. No more students can be boarded.\n");
     }
 
     route.currentStopIndex++;
@@ -118,12 +118,12 @@ int main() {
         switch (choice) {
             case 1:
                 if (route.currentStopIndex < route.stopCount)
-                    printf("🚌 Current: %s | ➡️ Next: %s\n",
+                    printf("Current: %s | Next: %s\n",
                            route.stops[route.currentStopIndex].stopName,
                            route.currentStopIndex + 1 < route.stopCount ?
                            route.stops[route.currentStopIndex + 1].stopName : "None");
                 else
-                    printf("✅ All stops completed.\n");
+                    printf("All stops completed.\n");
                 break;
             case 2:
                 moveToNextStop();
